@@ -58,7 +58,7 @@ app.post('/process', function(req, res) {
     });
 });
 
-const PORT = 8080; // local
-// const PORT = process.env.PORT || 3000; // this allows you to run online through Heroku
+// const PORT = 8080; // local
+const PORT = process.env.PORT || 3000; // this allows you to run online through Heroku
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
